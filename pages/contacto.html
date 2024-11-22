@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="shortcut icon" href="./img/logo.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="../img/logo.png">
     <title>Animal´s</title>
 </head>
+
 <body>
     <header>
-        <img src="./img/logo.png" alt="Logo de Animal's" class="icon">
+        <img src="../img/logo.png" alt="Logo de Animal's" class="icon">
         <nav>
             <ul class="textohead">
                 <li><a href="/index.html">Nosotros</a></li>
@@ -21,3 +22,103 @@
             </ul>
         </nav>
     </header>
+    <main>
+
+        <section class="contactos">
+            <h1 class="texcontacto"> Contacto</h1>
+        </section>
+
+        <section class="contacot-seccion">
+            <div class="contacto-uno">
+                <h3> ¿Tenés alguna duda?</h3>
+                <p>Comunicate con nosotros por consultas o presupuestos y te responderemos a la brevedad.</p>
+            </div>
+        </section>
+
+        <section class="fomulario">
+            <div>
+                <h3>Formulario de Registro</h3>
+                <form action="/enviar" method="POST">
+                    <label for="nombre">Nombre del Propietario:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono">
+
+                    <label for="nombre">Nombre de Mascota:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="fecha">Fecha de Nacimiento de Mascota:</label>
+                    <input type="date" id="fecha" name="fecha">
+
+                    <label for="especie">Especie:</label>
+                    <select id="especie" name="especie">
+                        <option value="Gato">Gato</option>
+                        <option value="Perro">Perro</option>
+                        <option value="otro">Otro</option>
+                    </select>
+
+                    <label for="asunto">Motivo de la Consulta:</label>
+                    <select id="asunto" name="">
+                        <option value="consulta">Consulta clinica</option>
+                        <option value="especialidades">Especielidades</option>
+                        <option value="cirugias">Cirugias</option>
+
+                        <option value="examne de laboratorio">Examen de laboratorio</option>
+                        <option value="faarmacia">Farmacia</option>
+                    </select>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+
+        </section>
+
+        <section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110332.34574933248!2d-58.53139056093751!3d-34.57050567738891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb9b695c7f3f%3A0x54adb0a3789ac306!2sVeterinaria%20Animals%20Pet%20Shop!5e1!3m2!1ses-419!2sar!4v1732306580185!5m2!1ses-419!2sar" width="1349" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <ul classe="social-icon">
+
+            <section class="sera">
+                <li class="icon-elem">
+                    <img src="../img/instagram.png" alt="logo instagram" class="icon">
+                </li>
+                <li class="icon-elem">
+                    <img src="../img/whatsapp.png" alt="logo whatsapp" class="icon">
+                </li>
+
+                <li class="icon-elem">
+                    <img src="../img/correo (1).png" alt="logo correo" class="icon">
+                </li>
+            </section>
+        </ul>
+        <ul class="menu">
+            <li class="menu-elem">
+                <a href="" class="menu-icon">Inicio</a>
+            </li>
+            <li class="menu-elem">
+                <a href="" class="menu-icon">Equipo</a>
+            </li>
+            <li class="menu-elem">
+                <a href="" class="menu-icon">Contacto</a>
+            </li>
+            <li class="menu-elem">
+                <a href="" class="menu-icon"> video</a>
+            </li>
+            <li class="menu-elem">
+                <a href="" class="menu-icon"> Sobre Nosotros</a>
+            </li>
+        </ul>
+        <p class="text">@Año | Todos los derechos recervados</p>
+    </footer>
+</body>
+
+</html>

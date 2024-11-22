@@ -1,0 +1,1102 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,900;0,1000;1,1000&family=Outfit:wght@500&family=Signika+Negative:wght@300..700&display=swap');
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    background: linear-gradient(90deg,
+            rgba(231, 246, 248, 0.418) 35%,
+            rgb(202, 234, 253) 70%);
+}
+
+$color-principal: #3e3e3ffd;
+$color-secundario: #3482db;
+$colo-variante: #fff;
+$tamaño-titulo: 25px;
+$tamaño-parrafo: 15px;
+$tamaño-intermedio: 13px;
+$text-shadow: 1px 1px 10px black;
+$margin: 100px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//heder
+header {
+    background-color: $color-principal;
+    padding: 10px;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    z-index: 1;
+    position: sticky;
+
+    img {
+        margin-left: 65px;
+        padding-top: 10px;
+        height: 90px;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: end;
+    }
+
+    li {
+        margin: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #3482db;
+        font-size: 15px;
+        margin: 5px;
+    }
+
+    a:hover {
+        color: $colo-variante;
+    }
+}
+
+// seccion principal
+.mascota {
+    background-image: url(../img/fondesec.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+// seccion siguiente
+.familia {
+    background-color: $colo-variante;
+    text-align: center;
+    font-size: $tamaño-titulo;
+    color: $color-principal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    margin-top: 40px;
+}
+
+// seccion vete
+.clinica-vet {
+    background-color: $colo-variante;
+    display: flex;
+    justify-content: Space-evenly;
+    align-items: center;
+
+
+    img {
+        height: 500px;
+        margin: 25px 25px;
+        display: flex;
+
+    }
+
+    .somos {
+        height: 250px;
+        width: 500px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .quienes {
+        font-size: $tamaño-titulo;
+        color: $color-secundario;
+    }
+
+    .somos-pa {
+        font-size: $tamaño-parrafo;
+        color: $color-principal ;
+    }
+}
+
+// seccion tarjetas
+.tarjetas {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $colo-variante;
+    margin-top: $margin;
+
+    .img-tarjetas {
+        height: 580px;
+        width: 410px;
+    }
+
+    img {
+        height: 350px;
+    }
+
+    .tarjeta-titulo {
+        font-size: $tamaño-titulo;
+        color: $color-secundario;
+        width: 390px;
+        margin: 5px;
+    }
+
+    .tarjeta-parrafo {
+        font-size: $tamaño-intermedio;
+        width: 390px;
+        margin: 5px;
+    }
+}
+
+// seccion tarjetas
+.ilove {
+    background-image: url(../img/amo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.juntos {
+    display: flex;
+    background-color: $colo-variante;
+    color: $color-principal;
+    font-size: $tamaño-parrafo;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+//Clinica
+.clinica {
+    background-color: #3482db;
+    height: 350px;
+    background-image: url(../img/pyg.png);
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+
+    .cajac {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .clinih {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 15px;
+        margin-top: 75px;
+        margin-left: 50px;
+        width: 50%;
+        font-size: $tamaño-titulo;
+        color: $colo-variante;
+        text-shadow: 1px 1px 10px $text-shadow;
+    }
+
+    .cliniip {
+        color: $colo-variante;
+        width: 50%;
+        font-size: $tamaño-parrafo;
+        display: flex;
+        text-align: center;
+        margin-bottom: 75px;
+        margin-top: 15px;
+        margin-left: 45px;
+        padding-top: 25px;
+        text-shadow: 1px 1px 10px $text-shadow;
+    }
+}
+
+.contigo {
+    display: flex;
+    justify-content: space-around;
+    background-color: $color-principal;
+    border-end-start-radius: 70px;
+    border-end-end-radius: 70px;
+    margin-bottom: $margin;
+    height: 180px;
+
+
+    .contigo-caja {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $colo-variante;
+    }
+
+    a{
+        text-decoration: none;
+        color: $colo-variante;
+    }
+
+    img{
+        width: 85px;
+        transition: 0.5s;
+    }
+
+    img:hover {
+        transform: translateY(-10px);
+    }
+}
+
+//Video
+.vidio {
+    background-color: $colo-variante;
+    width: 80%;
+    height: 580px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 130px;
+
+    .video-caja {
+        padding-left: 50px;
+        height: 500px;
+        width: 500px;
+    }
+
+    .vidio-titulos {
+        display: flex;
+        flex-direction: column;
+        margin: 60px;
+    }
+
+    .vidio-sub {
+        font-size: $tamaño-titulo;
+        color: $color-secundario;
+        text-shadow: 1px 1px 10px $text-shadow;
+    }
+
+    .vidio-titu {
+        font-size: $tamaño-titulo;
+        color: $color-principal;
+    }
+
+    .vidio-parrafo {
+        font-size: $tamaño-parrafo;
+        color: $color-principal;
+    }
+}
+
+//Slider
+.slider-box {
+    display: flex;
+    Justify-content: Space-evenly;
+    align-items: center;
+    background-image: url(../img/fondo.jpg);
+    height: 500px;
+    margin-top: $margin;
+    margin-bottom: $margin;
+
+    .carrusel {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .elemento {
+        flex: 1 0 auto;
+        margin: 0 50px;
+    }
+
+    img {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+//Internacion
+.internacion {
+    background-color: $colo-variante;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+
+    .internacion-cajas {
+        width: 650px;
+        padding: 15px 15px;
+    }
+
+    .interna {
+        font-size: $tamaño-titulo;
+        color: $color-secundario;
+    }
+
+    .interna-dos {
+        font-size: $tamaño-titulo;
+        color: $color-principal;
+    }
+
+    .inter-parra {
+        font-size: $tamaño-parrafo;
+        color: $color-principal;
+    }
+
+    .img-inter {
+        width: 550px;
+        height: 480px;
+    }
+}
+
+//Cirugia
+.cirugia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    background-image: url(../img/cirugia.jpg);
+    background-repeat: round;
+    margin-top: $margin;
+
+    .cirugia01 {
+        font-size: $tamaño-titulo;
+        color: $colo-variante;
+        text-align: center;
+        padding-bottom: 25px;
+        text-shadow: 1px 1px 10px $text-shadow;
+    }
+
+    .cirugia1 {
+        color: $colo-variante;
+        font-size: $tamaño-parrafo;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+//Slider- box 2
+.slider-box2 {
+    display: flex;
+    Justify-content: Space-evenly;
+    align-items: center;
+    background-color: $colo-variante;
+    height: 400px;
+    background-color: $colo-variante;
+
+    img {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+//Especialidades
+.trauma {
+    background-color: $color-principal;
+    display: flex;
+    justify-content: Space-evenly;
+    align-items: center;
+    height: 450px;
+    margin-top: $margin;
+
+    .trauma-uno{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 20px;
+        padding-top: 25px;
+        height: 300px;
+        width: 30%;
+        text-align: left;
+        color: $colo-variante;
+        text-shadow: 1px 1px 10px $text-shadow;
+    }
+
+    h3{
+        color: $colo-variante;
+        font-size: $tamaño-titulo;
+        padding-bottom: 15px;
+        text-shadow: 1px 1px 10px $text-shadow;
+    }
+
+    p{
+        font-size: $tamaño-parrafo;
+    }
+
+    .trauma-dos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 25px;
+        height: 350px;
+        width: 18%;
+        text-align: left;
+        color: $colo-variante;
+        text-shadow: 1px 1px 10px $text-shadow;
+    }
+
+    ul{
+        font-size: $tamaño-parrafo;
+    }
+
+    img {
+        height: 400px;
+        width: 480px;
+    }
+}
+
+//Productos
+.calidad {
+    background-color: $color-principal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    padding-top: 150px;
+    padding-bottom: 160px;
+
+
+    .calidadh {
+        font-size: $tamaño-titulo;
+        color: $color-secundario;
+        text-shadow: 1px 1px 10px $text-shadow;
+    }
+
+    .calidadp {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-size: $tamaño-parrafo;
+        color: $colo-variante;
+        padding-top: 40px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+//Produtos de farmacia
+.farma-pet {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: $margin;
+    margin-bottom: $margin;
+
+    .antiparasitaria {
+        background-color: #3482db;
+        height: 310px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    img {
+        width: 110px;
+        height: 110px;
+    }
+
+    p {
+        font-size: $tamaño-titulo;
+        text-align: center;
+        color: $colo-variante;
+    }
+
+    .parasito {
+        background-color: $colo-variante;
+        border-style: solid;
+        border-width: 4px;
+        border-color: #3482db;
+        height: 310px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    .parasito-h2 {
+        color: $color-secundario;
+        font-size: $tamaño-titulo;
+        padding: 15px;
+    }
+
+    .parasito-p {
+        color: $color-principal;
+        font-size: 15px;
+        text-align: left;
+        padding-left: $tamaño-intermedio;
+        padding-right: 10px;
+    }
+
+    .pipeta {
+        width: 150px;
+        height: 90px;
+        margin-left: 15px;
+    }
+}
+
+.farma-anti {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: $margin;
+    margin-bottom: $margin;
+
+    .antibiotica {
+        background-color: #9c3970;
+        height: 310px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    img {
+        width: 110px;
+        height: 110px;
+    }
+
+    p {
+        font-size: $tamaño-titulo;
+        text-align: center;
+        color: $colo-variante;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .caja-anti {
+        background-color: $colo-variante;
+        border-style: solid;
+        border-width: 4px;
+        border-color: #9c3970;
+        height: 310px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .anti-h2 {
+        color: #9c3970;
+        font-size: $tamaño-titulo;
+        padding: 15px;
+    }
+
+    .anti-p {
+        color: #9c3970;
+        font-size: 15px;
+        text-align: left;
+        padding-left: $tamaño-intermedio;
+        padding-right: 10px;
+    }
+
+    .img-azi {
+        width: 170px;
+        height: 70px;
+        margin-left: 15px;
+        padding-bottom: 5px;
+    }
+
+    .img-anti {
+        width: 170px;
+        height: 90px;
+        margin-left: 15px;
+        padding-bottom: 5px;
+    }
+
+    .img-gotas {
+        width: 130px;
+        height: 90px;
+        margin-left: 50px;
+        padding-bottom: 5px;
+
+    }
+}
+
+.farma-osteo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: $margin;
+    margin-bottom: $margin;
+
+    .osteo {
+        background-color: #75c954;
+        height: 310px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    img {
+        width: 110px;
+        height: 110px;
+    }
+
+    p {
+        font-size: $tamaño-titulo;
+        text-align: center;
+        color: $colo-variante;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .caja-osteo {
+        background-color: $colo-variante;
+        border-style: solid;
+        border-width: 4px;
+        border-color: #75c954;
+        height: 310px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    .osteo-h2 {
+        color: #75c954;
+        font-size: $tamaño-titulo;
+        padding: 15px;
+    }
+
+    .osteo-p {
+        color: #d8749a;
+        font-size: 15px;
+        text-align: left;
+        padding-left: $tamaño-intermedio;
+        padding-right: 10px;
+    }
+
+    .img-dermo {
+        width: 120px;
+        height: 100px;
+        margin-left: 45px;
+        padding-bottom: 5px;
+    }
+
+    .img-anti {
+        width: 125px;
+        height: 90px;
+        margin-left: 65px;
+        padding-bottom: 5px;
+    }
+
+    .img-force {
+        width: 90px;
+        height: 90px;
+        margin-left: 50px;
+        padding-bottom: 5px;
+    }
+}
+
+.farma-senior {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: $margin;
+    margin-bottom: $margin;
+
+    .senior {
+        background-color: #f1b138;
+        height: 310px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    img {
+        width: 110px;
+        height: 110px;
+    }
+
+    p {
+        font-size: $tamaño-titulo;
+        text-align: center;
+        color: $colo-variante;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .caja-senior {
+        background-color: $colo-variante;
+        border-style: solid;
+        border-width: 4px;
+        border-color: #f1b138;
+        height: 310px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .senior-h2 {
+        color: #f1b138;
+        font-size: $tamaño-titulo;
+        padding: 15px;
+    }
+
+    .senior-p {
+        color: #f1b138;
+        font-size: 15px;
+        text-align: left;
+        padding-left: $tamaño-intermedio;
+        padding-right: 10px;
+    }
+
+    .img-dermo {
+        width: 170px;
+        height: 130px;
+        margin-left: 15px;
+        padding-bottom: 5px;
+    }
+
+    .img-anti {
+        width: 105px;
+        height: 90px;
+        margin-left: 65px;
+        padding-bottom: 5px;
+    }
+
+    .img-force {
+        width: 70px;
+        height: 90px;
+        margin-left: 50px;
+        padding-bottom: 5px;
+    }
+}
+
+//Clientes
+.sabemos-por {
+    background-color: $colo-variante;
+    height: 350px;
+
+    background-image: url(../img/labradormarron.png);
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: 100%;
+
+    .caja-integral {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 850px;
+    }
+
+    h3 {
+        font-size: $tamaño-titulo;
+        color: $color-principal;
+        margin-left: 100px;
+        margin-top: 45px;
+    }
+
+    p {
+        color: $color-principal;
+        font-size: $tamaño-parrafo;
+        margin-left: 100px;
+    }
+}
+
+//Pacientes
+.caja {
+    display: flex;
+    justify-content: Space-evenly;
+    align-items: center;
+
+    .caja-div {
+        background-color: rgb(179, 187, 197);
+        width: 400px;
+        height: 480px;
+        padding-top: 35px;
+        text-align: center;
+        margin-bottom: 150px;
+        margin-top: $margin;
+    }
+
+    img {
+        width: 350px;
+        height: 300px;
+    }
+
+    .caja-h2 {
+        color: var(--color_primario);
+        font-size: var(--fon-ziveparra);
+        text-align: left;
+        margin-left: 40px;
+        width: 70%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .caja-parra {
+        color: var(--color_primario);
+        font-size: var(--fon-ziveparra);
+        text-align: left;
+        margin-left: 40px;
+        width: 80%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+.caja {
+    display: flex;
+    justify-content: Space-evenly;
+    align-items: center;
+
+    .caja-segunda {
+        background-color: rgb(98, 200, 207);
+        width: 400px;
+        height: 480px;
+        padding-top: 35px;
+        text-align: center;
+        margin-bottom: 150px;
+    }
+
+    img {
+        width: 350px;
+        height: 300px;
+    }
+
+    .caja-dos {
+        color: var(--color_primario);
+        font-size: var(--fon-ziveparra);
+        text-align: left;
+        margin-left: 40px;
+        width: 70%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .dos-parra {
+        color: var(--color_primario);
+        font-size: var(--fon-ziveparra);
+        text-align: left;
+        margin-left: 40px;
+        width: 80%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+.caja {
+    display: flex;
+    justify-content: Space-evenly;
+    align-items: center;
+
+    .caja-tercera {
+        background-color: rgb(147, 241, 163);
+        width: 400px;
+        height: 480px;
+        padding-top: 35px;
+        text-align: center;
+        margin-bottom: 150px;
+    }
+
+    img {
+        width: 350px;
+        height: 300px;
+    }
+
+    .caja-tres {
+        color: var(--color_primario);
+        font-size: var(--fon-ziveparra);
+        text-align: left;
+        margin-left: 40px;
+        width: 70%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .tres-parra {
+        color: var(--color_primario);
+        font-size: var(--fon-ziveparra);
+        text-align: left;
+        margin-left: 40px;
+        width: 80%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+//Sabemos
+.sabemos {
+    background-color: $color-principal;
+    display: flex;
+    Flex-direction: column;
+    margin-bottom: 100px;
+
+    h3 {
+        color: $colo-variante;
+        font-size: $tamaño-titulo;
+        margin-left: 100px;
+        margin-top: 70px;
+        width: 750px;
+    }
+
+    p {
+        color: $colo-variante;
+        font-size: $tamaño-parrafo;
+        text-shadow: 1px 1px 10px $text-shadow;
+        width: 75%;
+        margin-left: 100px;
+        margin-top: 25px;
+        margin-bottom: 85px;
+    }
+}
+
+//contacto
+
+.contactos {
+    background-image: url(../img/varios.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    background-repeat: round;
+
+    h1 {
+        font-size: 45px;
+        color: $colo-variante ;
+        text-align: center;
+        text-shadow: 1px 2px 10px $text-shadow;
+    }
+}
+
+.contacot-seccion {
+    background-color: var(--color_blanco);
+    display: flex;
+    flex-direction: column;
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: $color-principal;
+        font-size: $tamaño-titulo;
+        margin-top: $margin;
+    }
+
+    
+}
+
+//formulario
+.fomulario{
+        margin-top: $margin;
+        margin-bottom: $margin;;
+    
+    h3{
+        padding-left: 150px;
+        font-size: $tamaño-titulo;
+        color: $color-principal;
+    }
+
+    label {  
+        display: flex;  
+        margin-left: 150px;
+        margin-top: 10px;  
+    }  
+    input, textarea, select {  
+        margin-left: 150px;
+        width: 60%;  
+        padding: 8px;  
+        margin-top: 5px;  
+        border: 1px solid #ccc;  
+        border-radius: 4px;  
+        
+    }  
+    input[type="submit"] {  
+        background-color: #4CAF50;  
+        color: white;  
+        border: none;  
+        cursor: pointer;  
+    }  
+    input[type="submit"]:hover {  
+        background-color: #45a049;  
+    }  
+}
+
+//Footer
+.footer {
+    position: relative;
+    background-color: $color-principal;
+    min-height: 10px 15px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .sera {
+        display: flex;
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 35px;
+    }
+
+    .social-icon {
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon-elem {
+        list-style: none;
+    }
+
+    .icon {
+        display: flex;
+        color: $colo-variante;
+        display: inline-block;
+        margin: 0 10px;
+        transition: 0.5s;
+        height: 28px;
+        width: 28px;
+    }
+
+    .icon:hover {
+        transform: translateY(-10px);
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+        margin: 10px 0;
+        flex-wrap: wrap;
+    }
+
+    .menu-elem {
+        list-style: none;
+    }
+
+    .menu-icon {
+        color: $colo-variante;
+        font-size: $tamaño-intermedio;
+        display: inline-block;
+        text-decoration: none;
+        margin: 5px 10px;
+        opacity: 0.5;
+        transition: 0.3s;
+    }
+
+    .menu-icon:hover {
+        opacity: 1;
+    }
+
+    .text {
+        color: $colo-variante;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: $tamaño-intermedio;
+    }
+}
