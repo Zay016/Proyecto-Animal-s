@@ -185,6 +185,7 @@ header a:hover {
   width: 300px; /* Ancho fijo para las tarjetas */  
   transition: transform 0.3s; 
   text-align:left;
+  margin-bottom: 100px;
   
   /* Efecto de transición */  
 }  
@@ -221,13 +222,6 @@ header a:hover {
 
 
 
-.ilove {
-  background-image: url(../img/amo.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-}
-
 .juntos {
   display: flex;
   background-color: #fff;
@@ -240,44 +234,56 @@ header a:hover {
   text-align: center;
 }
 
-.clinica {
-  background-color: #3482db;
-  height: 350px;
+
+/*Nuevo*/
+
+.clinica {  
+  padding: 20px; /* Espaciado alrededor de la sección */  
+  background-color: #f0f0f0; /* Color de fondo opcional */  
+  text-align:justify; /* Centra el texto */  
   background-image: url(../img/pyg.png);
   background-repeat: no-repeat;
   background-position-x: 80%;
-}
+}  
 
-.clinica .cajac {
-  display: flex;
-  flex-direction: column;
-}
+.cajac {  
+  max-width: 800px; /* Ancho máximo del contenedor */  
+  margin: 0 auto; /* Centra el contenedor horizontalmente */ 
 
-.clinica .clinih {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 15px;
-  margin-top: 75px;
-  margin-left: 50px;
-  width: 50%;
-  font-size: 25px;
-  color: #fff;
-  text-shadow: 1px 1px 10px 1px 1px 10px black;
-}
+}  
 
-.clinica .cliniip {
-  color: #fff;
-  width: 50%;
-  font-size: 15px;
-  display: flex;
-  text-align: center;
-  margin-bottom: 75px;
-  margin-top: 15px;
-  margin-left: 45px;
-  padding-top: 25px;
-  text-shadow: 1px 1px 10px 1px 1px 10px black;
-}
+.clinih {  
+  color: #3482db;
+  width: 300px;
+  font-size: 2em; /* Tamaño de fuente para el título */  
+  margin-bottom: 10px; /* Espaciado debajo del título */  
+}  
+
+.cliniip {  
+  color: rgba(62, 62, 63, 0.9921568627);
+  width: 500px;
+  font-size: 1.2em; /* Tamaño de fuente para el párrafo */  
+  line-height: 1.5; /* Espaciado entre líneas */  
+}  
+
+/* Media Queries para Responsividad */  
+@media (max-width: 768px) {  
+  .clinih {  
+    text-align:justify;
+      font-size: 1.5em; /* Reduce el tamaño de la fuente en pantallas pequeñas */  
+  }  
+
+  .cliniip { 
+    text-align:justify;
+      font-size: 1em; /* Reduce el tamaño de la fuente en pantallas pequeñas */  
+  }  
+
+  .clinica {  
+      padding: 10px; /* Reduce el espaciado en pantallas pequeñas */  
+  }  
+}  
+
+
 
 .contigo {
   display: flex;
@@ -311,102 +317,201 @@ header a:hover {
   transform: translateY(-10px);
 }
 
-.vidio {
-  background-color: #fff;
-  width: 80%;
-  height: 580px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-left: 130px;
-}
 
-.vidio .video-caja {
-  padding-left: 50px;
-  height: 500px;
-  width: 500px;
-}
 
-.vidio .vidio-titulos {
+/*Nuevo*/
+
+.vidio {  
+  display: flex; /* Utiliza flexbox para el diseño */  
+  flex-direction: column; /* Coloca los elementos en columna */  
+  align-items: center; /* Centra los elementos horizontalmente */  
+  padding: 20px; /* Espaciado alrededor de la sección */  
+  background-color: #f0f0f0; /* Color de fondo opcional */  
+}  
+
+.video-caja {  
+  width: 100%; /* El video ocupa todo el ancho del contenedor */  
+  max-width: 750px; /* Ancho máximo del video */  
+  height: auto; /* Mantiene la proporción del video */  
+}  
+
+.vidio-titulos {  
   display: flex;
   flex-direction: column;
-  margin: 60px;
-}
-
-.vidio .vidio-sub {
-  font-size: 25px;
-  color: #3482db;
-  text-shadow: 1px 1px 10px 1px 1px 10px black;
-}
-
-.vidio .vidio-titu {
-  font-size: 25px;
-  color: rgba(62, 62, 63, 0.9921568627);
-}
-
-.vidio .vidio-parrafo {
-  font-size: 15px;
-  color: rgba(62, 62, 63, 0.9921568627);
-}
-
-.slider-box {
-  display: flex;
-  Justify-content: Space-evenly;
   align-items: center;
-  background-image: url(../img/fondo.jpg);
-  height: 500px;
+  justify-content: center; 
+  margin-top: 20px; /* Espaciado encima del título */  
+}  
+
+.vidio-sub {  
+  color: #3482db;
+  font-size: 2em; /* Tamaño de fuente para el subtítulo */  
+  margin-bottom: 10px; /* Espaciado debajo del subtítulo */  
+}  
+
+.vidio-titu {  
+  color:rgba(62, 62, 63, 0.9921568627) ;
+  font-size: 1.5em; /* Tamaño de fuente para el título */  
+  margin: 10px 0; /* Espaciado arriba y abajo del título */  
+}  
+
+.vidio-parra { 
+  color: rgba(62, 62, 63, 0.9921568627); 
+  font-size: 1.2em; /* Tamaño de fuente para el párrafo */  
+  text-align: center;
+  line-height: 1.5; /* Espaciado entre líneas */  
+  max-width: 600px; /* Ancho máximo del párrafo */  
+}  
+
+/* Media Queries para Responsividad */  
+@media (max-width: 768px) {  
+  .vidio-sub {  
+    text-align: center;
+      font-size: 1.5em; /* Reduce el tamaño de la fuente en pantallas pequeñas */  
+  }  
+
+  .vidio-titu {  
+    text-align: center;
+      font-size: 1.2em; /* Reduce el tamaño de la fuente en pantallas pequeñas */  
+  }  
+
+  .vidio-parra { 
+    text-align: center;
+      font-size: 1em; /* Reduce el tamaño de la fuente en pantallas pequeñas */  
+  }  
+
+  .vidio {  
+      padding: 10px; /* Reduce el espaciado en pantallas pequeñas */  
+  }  
+}  
+
+
+
+
+
+
+/*Nuevo*/
+
+.slider-box {  
+  padding: 20px; /* Espaciado alrededor de la sección */  
+  background-color: #f9f9f9; /* Color de fondo opcional */  
+  overflow: hidden; /* Oculta cualquier contenido que se desborde */  
+}  
+
+.carrusel {  
+  display: flex; /* Utiliza flexbox para alinear los elementos en fila */  
+  justify-content: space-around;
+  gap: 10px; /* Espaciado entre las imágenes */  
+  overflow-x: auto; /* Permite desplazamiento horizontal en pantallas pequeñas */  
+  scroll-behavior: smooth; /* Desplazamiento suave al hacer scroll */  
+}  
+
+.carrusel::-webkit-scrollbar {  
+  display: none; /* Oculta la barra de desplazamiento en navegadores basados en Webkit */  
+}  
+
+.elemento {  
+  flex: 0 0 auto; /* Evita que los elementos se reduzcan o crezcan automáticamente */  
+  width: 300px; /* Ancho fijo para cada imagen */  
+}  
+
+.elemento img {  
+  width: 100%; /* La imagen ocupa todo el ancho del contenedor */  
+  height: auto; /* Mantiene la proporción de la imagen */  
+  border-radius: 10px; /* Bordes redondeados opcionales */  
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional para las imágenes */  
+}  
+
+/* Media Queries para Responsividad */  
+@media (max-width: 768px) {  
+  .elemento {  
+      width: 250px; /* Reduce el ancho de las imágenes en pantallas pequeñas */  
+  }  
+}  
+
+@media (max-width: 480px) {  
+  .elemento {  
+      width: 200px; /* Reduce aún más el ancho de las imágenes en pantallas muy pequeñas */  
+  }  
+}  
+
+
+
+/*Nuevo*/
+
+
+.internacion {  
+  padding: 20px; /* Espaciado alrededor de la sección */  
   margin-top: 100px;
-  margin-bottom: 100px;
-}
+  background-color: #f0f0f0;
+ 
+}  
 
-.slider-box .carrusel {
-  display: flex;
-  flex-wrap: nowrap;
-}
+.internacion-cajas {  
+  max-width: 800px; /* Ancho máximo del contenedor */  
+  margin: 0 auto; /* Centra el contenedor horizontalmente */  
+  padding: 20px; /* Espaciado interno */  
+  border-radius: 8px; /* Bordes redondeados opcionales */  
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra opcional */  
+}  
 
-.slider-box .elemento {
-  flex: 1 0 auto;
-  margin: 0 50px;
-}
-
-.slider-box img {
-  width: 350px;
-  height: 350px;
-}
-
-.internacion {
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 600px;
-}
-
-.internacion .internacion-cajas {
-  width: 650px;
-  padding: 15px 15px;
-}
-
-.internacion .interna {
-  font-size: 25px;
+.interna {  
   color: #3482db;
-}
+  font-size: 2em; /* Tamaño de fuente para el título */  
+  margin-bottom: 10px; /* Espaciado debajo del título */  
+}  
 
-.internacion .interna-dos {
-  font-size: 25px;
+.interna-dos {  
   color: rgba(62, 62, 63, 0.9921568627);
-}
+  font-size: 1.5em; /* Tamaño de fuente para el subtítulo */  
+  margin: 10px 0; /* Espaciado arriba y abajo del subtítulo */  
+}  
 
-.internacion .inter-parra {
-  font-size: 15px;
+.inter-parra {  
   color: rgba(62, 62, 63, 0.9921568627);
-}
+  font-size: 1.2em; /* Tamaño de fuente para el párrafo */  
+  line-height: 1.5; /* Espaciado entre líneas */  
+  margin-bottom: 20px; /* Espaciado debajo del párrafo */  
+}  
 
-.internacion .img-inter {
-  width: 550px;
-  height: 480px;
-}
+.img-inter {  
+  width: 100%; /* La imagen ocupa todo el ancho del contenedor */  
+  height: auto; /* Mantiene la proporción de la imagen */  
+  border-radius: 8px; /* Bordes redondeados opcionales */  
+}  
 
+/* Media Queries para Responsividad */  
+@media (max-width: 768px) {  
+  .interna {  
+      font-size: 1.5em; /* Reduce el tamaño de la fuente en pantallas pequeñas */  
+  }  
+
+  .interna-dos {  
+      font-size: 1.2em; /* Reduce el tamaño de la fuente en pantallas pequeñas */  
+  }  
+
+  .inter-parra {  
+      font-size: 1em; /* Reduce el tamaño de la fuente en pantallas pequeñas */  
+  }  
+
+  .internacion-cajas {  
+      padding: 15px; /* Reduce el espaciado en pantallas pequeñas */  
+  }  
+}  
+
+@media (max-width: 480px) {  
+  .interna {  
+      font-size: 1.3em; /* Reduce aún más el tamaño de la fuente en pantallas muy pequeñas */  
+  }  
+
+  .interna-dos {  
+      font-size: 1.1em; /* Reduce aún más el tamaño de la fuente en pantallas muy pequeñas */  
+  }  
+
+  .inter-parra {  
+      font-size: 0.9em; /* Reduce aún más el tamaño de la fuente en pantallas muy pequeñas */  
+  }  
+}  
 .cirugia {
   display: flex;
   flex-direction: column;
@@ -434,73 +539,90 @@ header a:hover {
   padding-right: 50px;
 }
 
-.slider-box2 {
-  display: flex;
-  Justify-content: Space-evenly;
-  align-items: center;
-  background-color: #fff;
-  height: 400px;
-  background-color: #fff;
-}
-
-.slider-box2 img {
-  height: 300px;
-  width: 300px;
-}
-
-.trauma {
-  background-color: rgba(62, 62, 63, 0.9921568627);
-  display: flex;
-  justify-content: Space-evenly;
-  align-items: center;
-  height: 450px;
+.trauma {  
+  padding: 20px; /* Espaciado alrededor de la sección */  
+  background-color: #f9f9f9; /* Color de fondo opcional */  
+  max-width: 800px; /* Ancho máximo del contenedor */  
+  margin: 0 auto; /* Centra el contenedor horizontalmente */  
   margin-top: 100px;
-}
+  border-radius: 8px; /* Bordes redondeados opcionales */  
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+  margin-bottom: 100px;  
+}  
 
-.trauma .trauma-uno {
+.trauma-uno {  
+  font-size: 1.1em;
+  color:rgba(62, 62, 63, 0.9921568627) ;
+  margin-bottom: 20px; /* Espaciado debajo del primer div */  
+}  
+
+.trauma-dos{
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding-left: 20px;
-  padding-top: 25px;
-  height: 300px;
-  width: 30%;
-  text-align: left;
-  color: #fff;
-  text-shadow: 1px 1px 10px 1px 1px 10px black;
-}
-
-.trauma h3 {
-  color: #fff;
-  font-size: 25px;
-  padding-bottom: 15px;
-  text-shadow: 1px 1px 10px 1px 1px 10px black;
-}
-
-.trauma p {
-  font-size: 15px;
-}
-
-.trauma .trauma-dos {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  padding-top: 25px;
-  height: 350px;
-  width: 18%;
-  text-align: left;
-  color: #fff;
-  text-shadow: 1px 1px 10px 1px 1px 10px black;
+  justify-content:space-around;
+  
 }
+.trauma-dos ul {  
 
-.trauma ul {
-  font-size: 15px;
-}
+  list-style-type: none; /* Elimina los puntos de la lista */  
+  padding: 0; /* Elimina el padding por defecto */  
+}  
 
-.trauma img {
-  height: 400px;
-  width: 480px;
-}
+.trauma-dos li {  
+
+  list-style:disc;
+color: rgba(62, 62, 63, 0.9921568627);
+  margin: 5px 0; /* Espaciado entre los elementos de la lista */  
+  font-size: 1.1em; /* Tamaño de fuente para los elementos de la lista */  
+}  
+
+.trauma-img {  
+  width: 100%; /* La imagen ocupa todo el ancho del contenedor */  
+  height: auto; /* Mantiene la proporción de la imagen */  
+  border-radius: 8px; /* Bordes redondeados opcionales */  
+}  
+
+/* Media Queries para Responsividad */  
+@media (max-width: 768px) {  
+  .trauma-uno h3 {  
+      font-size: 1.5em; /* Reduce el tamaño de la fuente en pantallas pequeñas */  
+  }  
+
+  .trauma-uno p {  
+      font-size: 1em; /* Reduce el tamaño de la fuente en pantallas pequeñas */  
+  }  
+
+  .trauma-dos li {  
+      font-size: 1em; /* Reduce el tamaño de la fuente en pantallas pequeñas */  
+  }  
+}  
+
+@media (max-width: 480px) {  
+  .trauma-uno h3 {  
+      font-size: 1.3em; /* Reduce aún más el tamaño de la fuente en pantallas muy pequeñas */  
+  }  
+
+  .trauma-uno p {  
+      font-size: 0.9em; /* Reduce aún más el tamaño de la fuente en pantallas muy pequeñas */  
+  }  
+
+  .trauma-dos li {  
+      font-size: 0.9em; /* Reduce aún más el tamaño de la fuente en pantallas muy pequeñas */  
+  }  
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .calidad {
   background-color: rgba(62, 62, 63, 0.9921568627);
