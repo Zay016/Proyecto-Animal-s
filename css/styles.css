@@ -58,7 +58,6 @@ header a:hover {
 }
 
 .familia {
-  background-color: #fff;
   text-align: center;
   font-size: 25px;
   color: rgba(62, 62, 63, 0.9921568627);
@@ -67,44 +66,108 @@ header a:hover {
   align-items: center;
   height: 90px;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-.clinica-vet {
+
+
+
+
+/*nuevo*/
+
+
+.clinica-vet {  
   background-color: #fff;
-  display: flex;
-  justify-content: Space-evenly;
-  align-items: center;
-}
+  display: flex;  
+  flex-direction: column; /* Coloca los elementos en columna en pantallas pequeñas */  
+  align-items: center; /* Centra los elementos horizontalmente */  
+  padding: 20px 60px; 
 
-.clinica-vet img {
-  height: 500px;
-  margin: 25px 25px;
-  display: flex;
-}
+  text-align: center; /* Centra el texto */  
+}  
 
-.clinica-vet .somos {
-  height: 250px;
-  width: 500px;
-  text-align: left;
+.imagen-container {  
+  width: 60%; /* Imagen ocupa todo el ancho disponible */  
+  max-width: 600px; /* Ancho máximo para la imagen */  
+  margin-bottom: 20px; /* Espacio debajo de la imagen */  
+}  
+
+.clinica-vet img {  
+  width: 100%; /* Imagen ocupa todo el ancho del contenedor */  
+  height: auto; /* Mantiene la proporción de la imagen */  
+  border-radius: 8px; /* Bordes redondeados para la imagen */  
+}  
+
+.somos {  
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-
-.clinica-vet .quienes {
-  font-size: 25px;
-  color: #3482db;
-}
-
-.clinica-vet .somos-pa {
-  font-size: 15px;
-  color: rgba(62, 62, 63, 0.9921568627);
-}
-
-.bienestar {  
-  padding: 20px;  
-  text-align: center;  
+  justify-content: first baseline;
+  align-items:first baseline;
+  gap: 60px;
+  max-width: 600px; /* Ancho máximo para el texto */  
 }  
+
+.quienes {  
+  color: #3482db;
+  text-align:justify ;
+  margin-left: 10px;
+  
+  font-size: 30px;  
+
+}  
+
+.somos h3 {  
+  color: #3e3e3ffd;
+  text-align:justify ;
+  margin-left: 10px;
+  font-size: 1.2em; /* Tamaño de fuente para el subtítulo */  
+  
+}  
+
+.somos-pa {  
+  color: #3e3e3ffd;
+  margin-left: 10px;
+  text-align:justify ;
+  
+  font-size: 0.9em; /* Tamaño de fuente para el párrafo */  
+  line-height: 1.5; /* Espaciado entre líneas */  
+}  
+
+/* Media Queries para Responsividad */  
+@media (min-width: 768px) {  
+  .clinica-vet {  
+      flex-direction: row; /* Cambia a fila en pantallas más grandes */  
+      justify-content: space-between; /* Espacio entre los elementos */  
+  }  
+
+  .imagen-container {  
+      width: 50%; /* Imagen ocupa la mitad del ancho en pantallas grandes */  
+      margin-bottom: 0; /* Elimina el margen inferior en pantallas grandes */  
+  }  
+
+  .somos {  
+      width: 50%; /* Texto ocupa la otra mitad del ancho en pantallas grandes */  
+  }  
+}  
+
+
+
+
+
+
+
+/* nuevo */  
+
+.bienestar{
+  margin-top: 50px;
+  text-align: center;
+  color: #3e3e3ffd;
+  font-size: 20px;
+}
+
+.bienestar h2{
+  margin-bottom: 100px;
+}
 
 .tarjetas {  
   display: flex;  
@@ -120,7 +183,10 @@ header a:hover {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */  
   overflow: hidden; /* Para que la imagen no sobresalga */  
   width: 300px; /* Ancho fijo para las tarjetas */  
-  transition: transform 0.3s; /* Efecto de transición */  
+  transition: transform 0.3s; 
+  text-align:left;
+  
+  /* Efecto de transición */  
 }  
 
 .tarjeta:hover {  
@@ -133,12 +199,16 @@ header a:hover {
 }  
 
 .tarjeta h3 {  
-  font-size: 1.2em; /* Tamaño de fuente para el título */  
+
+  color: #3482db;
+  padding-left: 10px;
   margin: 10px 0; /* Margen superior e inferior */  
 }  
 
 .tarjeta p {  
-  font-size: 0.9em; /* Tamaño de fuente para el párrafo */  
+  font-size: 15px;
+  color: #3e3e3ffd;
+  padding-left: 10px; 
   padding: 0 10px 10px; /* Espaciado interno */  
 }  
 
