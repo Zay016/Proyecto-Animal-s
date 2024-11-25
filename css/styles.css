@@ -418,20 +418,20 @@ header a:hover {
 .elemento img {  
   width: 100%; /* La imagen ocupa todo el ancho del contenedor */  
   height: auto; /* Mantiene la proporción de la imagen */  
-  border-radius: 10px; /* Bordes redondeados opcionales */  
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional para las imágenes */  
+  border-radius: 10px;  
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }  
 
 /* Media Queries para Responsividad */  
 @media (max-width: 768px) {  
   .elemento {  
-      width: 250px; /* Reduce el ancho de las imágenes en pantallas pequeñas */  
+      width: 250px;  
   }  
 }  
 
 @media (max-width: 480px) {  
   .elemento {  
-      width: 200px; /* Reduce aún más el ancho de las imágenes en pantallas muy pequeñas */  
+      width: 200px; 
   }  
 }  
 
@@ -758,239 +758,6 @@ color: rgba(62, 62, 63, 0.9921568627);
   }  
 }     
 
-.farma-anti {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-.farma-anti .antibiotica {
-  background-color: #9c3970;
-  height: 310px;
-  width: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.farma-anti img {
-  width: 110px;
-  height: 110px;
-}
-
-.farma-anti p {
-  font-size: 25px;
-  text-align: center;
-  color: #fff;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.farma-anti .caja-anti {
-  background-color: #fff;
-  border-style: solid;
-  border-width: 4px;
-  border-color: #9c3970;
-  height: 310px;
-  width: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.farma-anti .anti-h2 {
-  color: #9c3970;
-  font-size: 25px;
-  padding: 15px;
-}
-
-.farma-anti .anti-p {
-  color: #9c3970;
-  font-size: 15px;
-  text-align: left;
-  padding-left: 13px;
-  padding-right: 10px;
-}
-
-.farma-anti .img-azi {
-  width: 170px;
-  height: 70px;
-  margin-left: 15px;
-  padding-bottom: 5px;
-}
-
-.farma-anti .img-anti {
-  width: 170px;
-  height: 90px;
-  margin-left: 15px;
-  padding-bottom: 5px;
-}
-
-.farma-anti .img-gotas {
-  width: 130px;
-  height: 90px;
-  margin-left: 50px;
-  padding-bottom: 5px;
-}
-
-.farma-osteo {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-.farma-osteo .osteo {
-  background-color: #75c954;
-  height: 310px;
-  width: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.farma-osteo img {
-  width: 110px;
-  height: 110px;
-}
-
-.farma-osteo p {
-  font-size: 25px;
-  text-align: center;
-  color: #fff;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.farma-osteo .caja-osteo {
-  background-color: #fff;
-  border-style: solid;
-  border-width: 4px;
-  border-color: #75c954;
-  height: 310px;
-  width: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.farma-osteo .osteo-h2 {
-  color: #75c954;
-  font-size: 25px;
-  padding: 15px;
-}
-
-.farma-osteo .osteo-p {
-  color: #d8749a;
-  font-size: 15px;
-  text-align: left;
-  padding-left: 13px;
-  padding-right: 10px;
-}
-
-.farma-osteo .img-dermo {
-  width: 120px;
-  height: 100px;
-  margin-left: 45px;
-  padding-bottom: 5px;
-}
-
-.farma-osteo .img-anti {
-  width: 125px;
-  height: 90px;
-  margin-left: 65px;
-  padding-bottom: 5px;
-}
-
-.farma-osteo .img-force {
-  width: 90px;
-  height: 90px;
-  margin-left: 50px;
-  padding-bottom: 5px;
-}
-
-.farma-senior {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-.farma-senior .senior {
-  background-color: #f1b138;
-  height: 310px;
-  width: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.farma-senior img {
-  width: 110px;
-  height: 110px;
-}
-
-.farma-senior p {
-  font-size: 25px;
-  text-align: center;
-  color: #fff;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.farma-senior .caja-senior {
-  background-color: #fff;
-  border-style: solid;
-  border-width: 4px;
-  border-color: #f1b138;
-  height: 310px;
-  width: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.farma-senior .senior-h2 {
-  color: #f1b138;
-  font-size: 25px;
-  padding: 15px;
-}
-
-.farma-senior .senior-p {
-  color: #f1b138;
-  font-size: 15px;
-  text-align: left;
-  padding-left: 13px;
-  padding-right: 10px;
-}
-
-.farma-senior .img-dermo {
-  width: 170px;
-  height: 130px;
-  margin-left: 15px;
-  padding-bottom: 5px;
-}
-
-.farma-senior .img-anti {
-  width: 105px;
-  height: 90px;
-  margin-left: 65px;
-  padding-bottom: 5px;
-}
-
-.farma-senior .img-force {
-  width: 70px;
-  height: 90px;
-  margin-left: 50px;
-  padding-bottom: 5px;
-}
 
 .sabemos-por {
   background-color: #fff;
