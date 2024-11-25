@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,900;0,1000;1,1000&family=Outfit:wght@500&family=Signika+Negative:wght@300..700&display=swap");
+
 body {
   font-family: "Noto Sans", sans-serif;
   background: linear-gradient(90deg, rgba(231, 246, 248, 0.418) 35%, rgb(202, 234, 253) 70%);
@@ -20,25 +21,30 @@ header {
   z-index: 1;
   position: sticky;
 }
+
 header img {
   margin-left: 65px;
   padding-top: 10px;
   height: 90px;
 }
+
 header ul {
   list-style: none;
   display: flex;
   justify-content: end;
 }
+
 header li {
   margin: 10px;
 }
+
 header a {
   text-decoration: none;
   color: #3482db;
   font-size: 15px;
   margin: 5px;
 }
+
 header a:hover {
   color: #fff;
 }
@@ -69,11 +75,13 @@ header a:hover {
   justify-content: Space-evenly;
   align-items: center;
 }
+
 .clinica-vet img {
   height: 500px;
   margin: 25px 25px;
   display: flex;
 }
+
 .clinica-vet .somos {
   height: 250px;
   width: 500px;
@@ -82,40 +90,66 @@ header a:hover {
   flex-direction: column;
   justify-content: center;
 }
+
 .clinica-vet .quienes {
   font-size: 25px;
   color: #3482db;
 }
+
 .clinica-vet .somos-pa {
   font-size: 15px;
   color: rgba(62, 62, 63, 0.9921568627);
 }
 
-.tarjetas {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #fff;
-  margin-top: 100px;
-}
-.tarjetas .img-tarjetas {
-  height: 580px;
-  width: 410px;
-}
-.tarjetas img {
-  height: 350px;
-}
-.tarjetas .tarjeta-titulo {
-  font-size: 25px;
-  color: #3482db;
-  width: 390px;
-  margin: 5px;
-}
-.tarjetas .tarjeta-parrafo {
-  font-size: 13px;
-  width: 390px;
-  margin: 5px;
-}
+.bienestar {  
+  padding: 20px;  
+  text-align: center;  
+}  
+
+.tarjetas {  
+  display: flex;  
+  flex-wrap: wrap;  
+  justify-content: center;  
+  margin-top: 50px;
+  gap: 60px; /* Espacio entre las tarjetas */  
+}  
+
+.tarjeta {  
+  background-color: #f9f9f9; /* Color de fondo de las tarjetas */  
+  border-radius: 8px; /* Bordes redondeados */  
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */  
+  overflow: hidden; /* Para que la imagen no sobresalga */  
+  width: 300px; /* Ancho fijo para las tarjetas */  
+  transition: transform 0.3s; /* Efecto de transición */  
+}  
+
+.tarjeta:hover {  
+  transform: scale(1.05); /* Efecto de aumento al pasar el ratón */  
+}  
+
+.tarjeta img {  
+  width: 100%; /* Imagen ocupa todo el ancho de la tarjeta */  
+  height: auto; /* Mantiene la proporción de la imagen */  
+}  
+
+.tarjeta h3 {  
+  font-size: 1.2em; /* Tamaño de fuente para el título */  
+  margin: 10px 0; /* Margen superior e inferior */  
+}  
+
+.tarjeta p {  
+  font-size: 0.9em; /* Tamaño de fuente para el párrafo */  
+  padding: 0 10px 10px; /* Espaciado interno */  
+}  
+
+/* Media Queries para Responsividad */  
+@media (max-width: 768px) {  
+  .tarjeta {  
+      width: 100%; /* Tarjetas ocupan todo el ancho en pantallas pequeñas */  
+  }  
+}  
+
+
 
 .ilove {
   background-image: url(../img/amo.png);
@@ -143,10 +177,12 @@ header a:hover {
   background-repeat: no-repeat;
   background-position-x: 80%;
 }
+
 .clinica .cajac {
   display: flex;
   flex-direction: column;
 }
+
 .clinica .clinih {
   display: flex;
   justify-content: center;
@@ -159,6 +195,7 @@ header a:hover {
   color: #fff;
   text-shadow: 1px 1px 10px 1px 1px 10px black;
 }
+
 .clinica .cliniip {
   color: #fff;
   width: 50%;
@@ -181,6 +218,7 @@ header a:hover {
   margin-bottom: 100px;
   height: 180px;
 }
+
 .contigo .contigo-caja {
   display: flex;
   flex-direction: column;
@@ -188,14 +226,17 @@ header a:hover {
   align-items: center;
   color: #fff;
 }
+
 .contigo a {
   text-decoration: none;
   color: #fff;
 }
+
 .contigo img {
   width: 85px;
   transition: 0.5s;
 }
+
 .contigo img:hover {
   transform: translateY(-10px);
 }
@@ -209,25 +250,30 @@ header a:hover {
   justify-content: space-around;
   margin-left: 130px;
 }
+
 .vidio .video-caja {
   padding-left: 50px;
   height: 500px;
   width: 500px;
 }
+
 .vidio .vidio-titulos {
   display: flex;
   flex-direction: column;
   margin: 60px;
 }
+
 .vidio .vidio-sub {
   font-size: 25px;
   color: #3482db;
   text-shadow: 1px 1px 10px 1px 1px 10px black;
 }
+
 .vidio .vidio-titu {
   font-size: 25px;
   color: rgba(62, 62, 63, 0.9921568627);
 }
+
 .vidio .vidio-parrafo {
   font-size: 15px;
   color: rgba(62, 62, 63, 0.9921568627);
@@ -242,14 +288,17 @@ header a:hover {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+
 .slider-box .carrusel {
   display: flex;
   flex-wrap: nowrap;
 }
+
 .slider-box .elemento {
   flex: 1 0 auto;
   margin: 0 50px;
 }
+
 .slider-box img {
   width: 350px;
   height: 350px;
@@ -262,22 +311,27 @@ header a:hover {
   justify-content: center;
   height: 600px;
 }
+
 .internacion .internacion-cajas {
   width: 650px;
   padding: 15px 15px;
 }
+
 .internacion .interna {
   font-size: 25px;
   color: #3482db;
 }
+
 .internacion .interna-dos {
   font-size: 25px;
   color: rgba(62, 62, 63, 0.9921568627);
 }
+
 .internacion .inter-parra {
   font-size: 15px;
   color: rgba(62, 62, 63, 0.9921568627);
 }
+
 .internacion .img-inter {
   width: 550px;
   height: 480px;
@@ -293,6 +347,7 @@ header a:hover {
   background-repeat: round;
   margin-top: 100px;
 }
+
 .cirugia .cirugia01 {
   font-size: 25px;
   color: #fff;
@@ -300,6 +355,7 @@ header a:hover {
   padding-bottom: 25px;
   text-shadow: 1px 1px 10px 1px 1px 10px black;
 }
+
 .cirugia .cirugia1 {
   color: #fff;
   font-size: 15px;
@@ -316,6 +372,7 @@ header a:hover {
   height: 400px;
   background-color: #fff;
 }
+
 .slider-box2 img {
   height: 300px;
   width: 300px;
@@ -329,6 +386,7 @@ header a:hover {
   height: 450px;
   margin-top: 100px;
 }
+
 .trauma .trauma-uno {
   display: flex;
   flex-direction: column;
@@ -341,15 +399,18 @@ header a:hover {
   color: #fff;
   text-shadow: 1px 1px 10px 1px 1px 10px black;
 }
+
 .trauma h3 {
   color: #fff;
   font-size: 25px;
   padding-bottom: 15px;
   text-shadow: 1px 1px 10px 1px 1px 10px black;
 }
+
 .trauma p {
   font-size: 15px;
 }
+
 .trauma .trauma-dos {
   display: flex;
   justify-content: center;
@@ -361,9 +422,11 @@ header a:hover {
   color: #fff;
   text-shadow: 1px 1px 10px 1px 1px 10px black;
 }
+
 .trauma ul {
   font-size: 15px;
 }
+
 .trauma img {
   height: 400px;
   width: 480px;
@@ -379,11 +442,13 @@ header a:hover {
   padding-top: 150px;
   padding-bottom: 160px;
 }
+
 .calidad .calidadh {
   font-size: 25px;
   color: #3482db;
   text-shadow: 1px 1px 10px 1px 1px 10px black;
 }
+
 .calidad .calidadp {
   display: flex;
   align-items: center;
@@ -402,6 +467,7 @@ header a:hover {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+
 .farma-pet .antiparasitaria {
   background-color: #3482db;
   height: 310px;
@@ -411,15 +477,18 @@ header a:hover {
   align-items: center;
   justify-content: center;
 }
+
 .farma-pet img {
   width: 110px;
   height: 110px;
 }
+
 .farma-pet p {
   font-size: 25px;
   text-align: center;
   color: #fff;
 }
+
 .farma-pet .parasito {
   background-color: #fff;
   border-style: solid;
@@ -431,11 +500,13 @@ header a:hover {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .farma-pet .parasito-h2 {
   color: #3482db;
   font-size: 25px;
   padding: 15px;
 }
+
 .farma-pet .parasito-p {
   color: rgba(62, 62, 63, 0.9921568627);
   font-size: 15px;
@@ -443,6 +514,7 @@ header a:hover {
   padding-left: 13px;
   padding-right: 10px;
 }
+
 .farma-pet .pipeta {
   width: 150px;
   height: 90px;
@@ -456,6 +528,7 @@ header a:hover {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+
 .farma-anti .antibiotica {
   background-color: #9c3970;
   height: 310px;
@@ -465,10 +538,12 @@ header a:hover {
   align-items: center;
   justify-content: center;
 }
+
 .farma-anti img {
   width: 110px;
   height: 110px;
 }
+
 .farma-anti p {
   font-size: 25px;
   text-align: center;
@@ -476,6 +551,7 @@ header a:hover {
   padding-left: 5px;
   padding-right: 5px;
 }
+
 .farma-anti .caja-anti {
   background-color: #fff;
   border-style: solid;
@@ -487,11 +563,13 @@ header a:hover {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .farma-anti .anti-h2 {
   color: #9c3970;
   font-size: 25px;
   padding: 15px;
 }
+
 .farma-anti .anti-p {
   color: #9c3970;
   font-size: 15px;
@@ -499,18 +577,21 @@ header a:hover {
   padding-left: 13px;
   padding-right: 10px;
 }
+
 .farma-anti .img-azi {
   width: 170px;
   height: 70px;
   margin-left: 15px;
   padding-bottom: 5px;
 }
+
 .farma-anti .img-anti {
   width: 170px;
   height: 90px;
   margin-left: 15px;
   padding-bottom: 5px;
 }
+
 .farma-anti .img-gotas {
   width: 130px;
   height: 90px;
@@ -525,6 +606,7 @@ header a:hover {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+
 .farma-osteo .osteo {
   background-color: #75c954;
   height: 310px;
@@ -534,10 +616,12 @@ header a:hover {
   align-items: center;
   justify-content: center;
 }
+
 .farma-osteo img {
   width: 110px;
   height: 110px;
 }
+
 .farma-osteo p {
   font-size: 25px;
   text-align: center;
@@ -545,6 +629,7 @@ header a:hover {
   padding-left: 5px;
   padding-right: 5px;
 }
+
 .farma-osteo .caja-osteo {
   background-color: #fff;
   border-style: solid;
@@ -556,11 +641,13 @@ header a:hover {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .farma-osteo .osteo-h2 {
   color: #75c954;
   font-size: 25px;
   padding: 15px;
 }
+
 .farma-osteo .osteo-p {
   color: #d8749a;
   font-size: 15px;
@@ -568,18 +655,21 @@ header a:hover {
   padding-left: 13px;
   padding-right: 10px;
 }
+
 .farma-osteo .img-dermo {
   width: 120px;
   height: 100px;
   margin-left: 45px;
   padding-bottom: 5px;
 }
+
 .farma-osteo .img-anti {
   width: 125px;
   height: 90px;
   margin-left: 65px;
   padding-bottom: 5px;
 }
+
 .farma-osteo .img-force {
   width: 90px;
   height: 90px;
@@ -594,6 +684,7 @@ header a:hover {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+
 .farma-senior .senior {
   background-color: #f1b138;
   height: 310px;
@@ -603,10 +694,12 @@ header a:hover {
   align-items: center;
   justify-content: center;
 }
+
 .farma-senior img {
   width: 110px;
   height: 110px;
 }
+
 .farma-senior p {
   font-size: 25px;
   text-align: center;
@@ -614,6 +707,7 @@ header a:hover {
   padding-left: 5px;
   padding-right: 5px;
 }
+
 .farma-senior .caja-senior {
   background-color: #fff;
   border-style: solid;
@@ -625,11 +719,13 @@ header a:hover {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .farma-senior .senior-h2 {
   color: #f1b138;
   font-size: 25px;
   padding: 15px;
 }
+
 .farma-senior .senior-p {
   color: #f1b138;
   font-size: 15px;
@@ -637,18 +733,21 @@ header a:hover {
   padding-left: 13px;
   padding-right: 10px;
 }
+
 .farma-senior .img-dermo {
   width: 170px;
   height: 130px;
   margin-left: 15px;
   padding-bottom: 5px;
 }
+
 .farma-senior .img-anti {
   width: 105px;
   height: 90px;
   margin-left: 65px;
   padding-bottom: 5px;
 }
+
 .farma-senior .img-force {
   width: 70px;
   height: 90px;
@@ -664,18 +763,21 @@ header a:hover {
   background-position-x: 90%;
   background-position-y: 100%;
 }
+
 .sabemos-por .caja-integral {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   width: 850px;
 }
+
 .sabemos-por h3 {
   font-size: 25px;
   color: rgba(62, 62, 63, 0.9921568627);
   margin-left: 100px;
   margin-top: 45px;
 }
+
 .sabemos-por p {
   color: rgba(62, 62, 63, 0.9921568627);
   font-size: 15px;
@@ -687,6 +789,7 @@ header a:hover {
   justify-content: Space-evenly;
   align-items: center;
 }
+
 .caja .caja-div {
   background-color: rgb(179, 187, 197);
   width: 400px;
@@ -696,10 +799,12 @@ header a:hover {
   margin-bottom: 150px;
   margin-top: 100px;
 }
+
 .caja img {
   width: 350px;
   height: 300px;
 }
+
 .caja .caja-h2 {
   color: var(--color_primario);
   font-size: var(--fon-ziveparra);
@@ -709,6 +814,7 @@ header a:hover {
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
 .caja .caja-parra {
   color: var(--color_primario);
   font-size: var(--fon-ziveparra);
@@ -724,6 +830,7 @@ header a:hover {
   justify-content: Space-evenly;
   align-items: center;
 }
+
 .caja .caja-segunda {
   background-color: rgb(98, 200, 207);
   width: 400px;
@@ -732,10 +839,12 @@ header a:hover {
   text-align: center;
   margin-bottom: 150px;
 }
+
 .caja img {
   width: 350px;
   height: 300px;
 }
+
 .caja .caja-dos {
   color: var(--color_primario);
   font-size: var(--fon-ziveparra);
@@ -745,6 +854,7 @@ header a:hover {
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
 .caja .dos-parra {
   color: var(--color_primario);
   font-size: var(--fon-ziveparra);
@@ -760,6 +870,7 @@ header a:hover {
   justify-content: Space-evenly;
   align-items: center;
 }
+
 .caja .caja-tercera {
   background-color: rgb(147, 241, 163);
   width: 400px;
@@ -768,10 +879,12 @@ header a:hover {
   text-align: center;
   margin-bottom: 150px;
 }
+
 .caja img {
   width: 350px;
   height: 300px;
 }
+
 .caja .caja-tres {
   color: var(--color_primario);
   font-size: var(--fon-ziveparra);
@@ -781,6 +894,7 @@ header a:hover {
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
 .caja .tres-parra {
   color: var(--color_primario);
   font-size: var(--fon-ziveparra);
@@ -797,6 +911,7 @@ header a:hover {
   Flex-direction: column;
   margin-bottom: 100px;
 }
+
 .sabemos h3 {
   color: #fff;
   font-size: 25px;
@@ -804,6 +919,7 @@ header a:hover {
   margin-top: 70px;
   width: 750px;
 }
+
 .sabemos p {
   color: #fff;
   font-size: 15px;
@@ -823,6 +939,7 @@ header a:hover {
   height: 300px;
   background-repeat: round;
 }
+
 .contactos h1 {
   font-size: 45px;
   color: #fff;
@@ -835,6 +952,7 @@ header a:hover {
   display: flex;
   flex-direction: column;
 }
+
 .contacot-seccion div {
   display: flex;
   align-items: center;
@@ -849,17 +967,22 @@ header a:hover {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+
 .fomulario h3 {
   padding-left: 150px;
   font-size: 25px;
   color: rgba(62, 62, 63, 0.9921568627);
 }
+
 .fomulario label {
   display: flex;
   margin-left: 150px;
   margin-top: 10px;
 }
-.fomulario input, .fomulario textarea, .fomulario select {
+
+.fomulario input,
+.fomulario textarea,
+.fomulario select {
   margin-left: 150px;
   width: 60%;
   padding: 8px;
@@ -867,12 +990,14 @@ header a:hover {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
 .fomulario input[type=submit] {
   background-color: #4CAF50;
   color: white;
   border: none;
   cursor: pointer;
 }
+
 .fomulario input[type=submit]:hover {
   background-color: #45a049;
 }
@@ -887,6 +1012,7 @@ header a:hover {
   align-items: center;
   flex-direction: column;
 }
+
 .footer .sera {
   display: flex;
   position: static;
@@ -895,15 +1021,18 @@ header a:hover {
   align-items: center;
   padding-top: 35px;
 }
+
 .footer .social-icon {
   position: static;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .footer .icon-elem {
   list-style: none;
 }
+
 .footer .icon {
   display: flex;
   color: #fff;
@@ -913,9 +1042,11 @@ header a:hover {
   height: 28px;
   width: 28px;
 }
+
 .footer .icon:hover {
   transform: translateY(-10px);
 }
+
 .footer .menu {
   display: flex;
   justify-content: center;
@@ -924,9 +1055,11 @@ header a:hover {
   margin: 10px 0;
   flex-wrap: wrap;
 }
+
 .footer .menu-elem {
   list-style: none;
 }
+
 .footer .menu-icon {
   color: #fff;
   font-size: 13px;
@@ -936,9 +1069,11 @@ header a:hover {
   opacity: 0.5;
   transition: 0.3s;
 }
+
 .footer .menu-icon:hover {
   opacity: 1;
 }
+
 .footer .text {
   color: #fff;
   text-align: center;

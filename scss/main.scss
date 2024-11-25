@@ -10,6 +10,7 @@ body {
 $color-principal: #3e3e3ffd;
 $color-secundario: #3482db;
 $colo-variante: #fff;
+$tamaño-mediano: 20px;
 $tamaño-titulo: 25px;
 $tamaño-parrafo: 15px;
 $tamaño-intermedio: 13px;
@@ -33,6 +34,7 @@ header {
     z-index: 1;
     position: sticky;
 
+
     img {
         margin-left: 65px;
         padding-top: 10px;
@@ -43,6 +45,7 @@ header {
         list-style: none;
         display: flex;
         justify-content: end;
+
     }
 
     li {
@@ -122,18 +125,16 @@ header {
 .tarjetas {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    background-color: $colo-variante;
-    margin-top: $margin;
+    justify-content: center;
 
-    .img-tarjetas {
-        height: 580px;
-        width: 410px;
+
+    div{
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    img {
-        height: 350px;
-    }
 
     .tarjeta-titulo {
         font-size: $tamaño-titulo;
@@ -227,12 +228,12 @@ header {
         color: $colo-variante;
     }
 
-    a{
+    a {
         text-decoration: none;
         color: $colo-variante;
     }
 
-    img{
+    img {
         width: 85px;
         transition: 0.5s;
     }
@@ -393,7 +394,7 @@ header {
     height: 450px;
     margin-top: $margin;
 
-    .trauma-uno{
+    .trauma-uno {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -406,18 +407,18 @@ header {
         text-shadow: 1px 1px 10px $text-shadow;
     }
 
-    h3{
+    h3 {
         color: $colo-variante;
         font-size: $tamaño-titulo;
         padding-bottom: 15px;
         text-shadow: 1px 1px 10px $text-shadow;
     }
 
-    p{
+    p {
         font-size: $tamaño-parrafo;
     }
 
-    .trauma-dos{
+    .trauma-dos {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -429,7 +430,7 @@ header {
         text-shadow: 1px 1px 10px $text-shadow;
     }
 
-    ul{
+    ul {
         font-size: $tamaño-parrafo;
     }
 
@@ -981,43 +982,49 @@ header {
         margin-top: $margin;
     }
 
-    
+
 }
 
 //formulario
-.fomulario{
-        margin-top: $margin;
-        margin-bottom: $margin;;
-    
-    h3{
+.fomulario {
+    margin-top: $margin;
+    margin-bottom: $margin;
+    ;
+
+    h3 {
         padding-left: 150px;
         font-size: $tamaño-titulo;
         color: $color-principal;
     }
 
-    label {  
-        display: flex;  
+    label {
+        display: flex;
         margin-left: 150px;
-        margin-top: 10px;  
-    }  
-    input, textarea, select {  
+        margin-top: 10px;
+    }
+
+    input,
+    textarea,
+    select {
         margin-left: 150px;
-        width: 60%;  
-        padding: 8px;  
-        margin-top: 5px;  
-        border: 1px solid #ccc;  
-        border-radius: 4px;  
-        
-    }  
-    input[type="submit"] {  
-        background-color: #4CAF50;  
-        color: white;  
-        border: none;  
-        cursor: pointer;  
-    }  
-    input[type="submit"]:hover {  
-        background-color: #45a049;  
-    }  
+        width: 60%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+
+    }
+
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
 }
 
 //Footer
