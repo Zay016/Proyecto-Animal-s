@@ -1,0 +1,166 @@
+.contactos {
+    height: 250px;
+    background-color: #f0c44c;
+    /* Color de fondo opcional */
+    background-image: url(../img/bulldog.jpg.png);
+    background-position-x: 70%;
+    background-position-y: 65%;
+    padding: 20px;
+    /* Espaciado interno */
+    text-align: center;
+    /* Centra el texto */
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        color: rgba(62, 62, 63, 0.9921568627);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: $tamaño-titulo;
+        /* Tamaño de fuente del encabezado */
+        margin: 0;
+        /* Elimina el margen por defecto */
+    }
+}
+
+.contacot-seccion {
+    padding: 20px;
+    /* Espaciado interno */
+    margin: 0 auto;
+    /* Centra el contenedor horizontalmente */
+
+    .contacto-uno {
+        color: rgba(62, 62, 63, 0.9921568627);
+        margin-top: 100px;
+        border-radius: 8px;
+        /* Bordes redondeados */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /* Sombra opcional */
+        padding: 20px;
+        /* Espaciado interno */
+        text-align: center;
+        /* Centra el contenido */
+    }
+
+    h3 {
+        font-size: $tamaño-intermedio;
+        /* Tamaño de fuente del subtítulo */
+        margin-bottom: 10px;
+        /* Espaciado inferior */
+    }
+
+    p {
+        font-size: $tamaño-parrafo;
+        /* Tamaño de fuente del párrafo */
+        line-height: 1.5;
+        /* Espaciado entre líneas */
+    }
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+        padding-right: 150px;
+        /* Reduce el tamaño de la fuente en pantallas medianas */
+    }
+
+    .contacto-uno h3 {
+        font-size: 1.5em;
+        /* Reduce el tamaño del subtítulo en pantallas medianas */
+    }
+
+    .contacto-uno p {
+        font-size: 1em;
+        /* Reduce el tamaño del párrafo en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .texcontacto {
+        font-size: 1.5em;
+        /* Reduce aún más el tamaño de la fuente en pantallas pequeñas */
+    }
+
+    .contacto-uno h3 {
+        font-size: 1.3em;
+        /* Reduce aún más el tamaño del subtítulo en pantallas pequeñas */
+    }
+
+    .contacto-uno p {
+        font-size: 0.9em;
+        /* Reduce aún más el tamaño del párrafo en pantallas pequeñas */
+    }
+}
+
+.fomulario {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.fomulario h3 {
+    padding-left: 150px;
+    font-size: 25px;
+    color: rgba(62, 62, 63, 0.9921568627);
+}
+
+.fomulario label {
+    display: flex;
+    margin-left: 150px;
+    margin-top: 10px;
+}
+
+.fomulario input,
+.fomulario textarea,
+.fomulario select {
+    margin-left: 150px;
+    width: 60%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.fomulario input[type=submit] {
+    background-color: #f0c44c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.fomulario input[type=submit]:hover {
+    background-color: #f0c44c;
+}
+
+.map-container {
+    position: relative;
+    /* Posicionamiento relativo para el contenedor */
+    width: 100%;
+    /* Ancho completo del contenedor */
+    padding-top: 20%;
+    /* Proporción de aspecto 16:9 (altura = 9/16 * ancho) */
+    overflow: hidden;
+    /* Oculta el desbordamiento */
+    border-radius: 8px;
+    /* Bordes redondeados opcionales */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra opcional */
+}
+
+.map-container iframe {
+    position: absolute;
+    /* Posicionamiento absoluto para el iframe */
+    top: 0;
+    /* Alinea al borde superior */
+    left: 0;
+    /* Alinea al borde izquierdo */
+    width: 100%;
+    /* Ancho completo del iframe */
+    height: 100%;
+    /* Altura completa del iframe */
+    border: 0;
+    /* Sin borde */
+}

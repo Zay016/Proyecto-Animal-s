@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,900;0,1000;1,1000&family=Outfit:wght@500&family=Signika+Negative:wght@300..700&display=swap");
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    background: linear-gradient(90deg, rgba(231, 246, 248, 0.418) 35%, rgb(202, 234, 253) 70%);
+}
+
+$color-principal: #3e3e3ffd;
+$color-secundario: #3482db;
+$colo-variante: #fff;
+$tamaño-mediano: 20px;
+$tamaño-titulo: 2em;
+$tamaño-parrafo: 0.9em;
+$tamaño-intermedio: 1.2em;
+$text-shadow: 1px 1px 10px black;
+$margin: 100px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
