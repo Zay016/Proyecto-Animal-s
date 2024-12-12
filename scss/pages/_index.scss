@@ -1,6 +1,3 @@
-
-
-
 .mascota {
     background-image: url(../img/fondesec.png);
     background-position: center;
@@ -25,30 +22,21 @@
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    /* Coloca los elementos en columna en pantallas pequeñas */
     align-items: center;
-    /* Centra los elementos horizontalmente */
     padding: 20px 60px;
 
     text-align: center;
-    /* Centra el texto */
 
     .imagen-container {
         width: 60%;
-        /* Imagen ocupa todo el ancho disponible */
         max-width: 600px;
-        /* Ancho máximo para la imagen */
         margin-bottom: 20px;
-        /* Espacio debajo de la imagen */
     }
 
     img {
         width: 100%;
-        /* Imagen ocupa todo el ancho del contenedor */
         height: auto;
-        /* Mantiene la proporción de la imagen */
         border-radius: 8px;
-        /* Bordes redondeados para la imagen */
     }
 
     .somos {
@@ -58,7 +46,6 @@
         align-items: first baseline;
         gap: 60px;
         max-width: 600px;
-        /* Ancho máximo para el texto */
 
         h2 {
             color: #3482db;
@@ -72,7 +59,6 @@
             text-align: justify;
             margin-left: 10px;
             font-size: 1.2em;
-            /* Tamaño de fuente para el subtítulo */
         }
 
         p {
@@ -80,33 +66,25 @@
             margin-left: 10px;
             text-align: justify;
             font-size: $tamaño-parrafo;
-            /* Tamaño de fuente para el párrafo */
             line-height: 1.5;
-            /* Espaciado entre líneas */
         }
     }
 }
-
-/* Media Queries para Responsividad */
+// Media Queries para Responsividad 
 @media (min-width: 768px) {
 
     .clinica-vet {
         flex-direction: row;
-        /* Cambia a fila en pantallas más grandes */
         justify-content: space-between;
-        /* Espacio entre los elementos */
     }
 
     .imagen-container {
         width: 50%;
-        /* Imagen ocupa la mitad del ancho en pantallas grandes */
         margin-bottom: 0;
-        /* Elimina el margen inferior en pantallas grandes */
     }
 
     .somos {
         width: 50%;
-        /* Texto ocupa la otra mitad del ancho en pantallas grandes */
     }
 }
 
@@ -126,29 +104,21 @@
         justify-content: center;
         margin-top: 50px;
         gap: 60px;
-        /* Espacio entre las tarjetas */
 
         .tarjeta {
             background-color: #f9f9f9;
-            /* Color de fondo de las tarjetas */
             border-radius: 8px;
-            /* Bordes redondeados */
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            /* Sombra para dar profundidad */
             overflow: hidden;
-            /* Para que la imagen no sobresalga */
             width: 300px;
-            /* Ancho fijo para las tarjetas */
             transition: transform 0.3s;
             text-align: left;
             margin-bottom: 100px;
-            /* Efecto de transición */
 
             h3 {
                 color: #3482db;
                 padding-left: 10px;
                 margin: 10px 0;
-                /* Margen superior e inferior */
             }
 
             p {
@@ -156,7 +126,6 @@
                 color: #3e3e3ffd;
                 padding-left: 10px;
                 padding: 0 10px 10px;
-                /* Espaciado interno */
             }
         }
     }
@@ -164,21 +133,16 @@
 
 .tarjeta img {
     width: 100%;
-    /* Imagen ocupa todo el ancho de la tarjeta */
     height: auto;
-    /* Mantiene la proporción de la imagen */
 }
 
 .tarjeta:hover {
     transform: scale(1.05);
-    /* Efecto de aumento al pasar el ratón */
 }
-
-/* Media Queries para Responsividad */
+// Media Queries para Responsividad 
 @media (max-width: 768px) {
     .tarjeta {
         width: 100%;
-        /* Tarjetas ocupan todo el ancho en pantallas pequeñas */
     }
 }
 

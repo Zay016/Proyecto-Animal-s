@@ -1,20 +1,14 @@
 .calidad {
     height: 340px;
     padding: 20px;
-    
-    /* Espaciado alrededor de la sección */
     background-color: #f9f9f9;
-    /* Color de fondo opcional */
     background-image: url(../img/bulldogmedi.png);
     background-repeat: no-repeat;
     background-position-y: 100%;
     background-position-x: 90%;
     margin: 0 auto;
-    /* Centra el contenedor horizontalmente */
     border-radius: 8px;
-    /* Bordes redondeados opcionales */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Sombra opcional */
 }
 
 .calidadh {
@@ -23,10 +17,8 @@
     width: 60%;
     color: #3482db;
     font-size: $tamaño-titulo;
-    /* Tamaño de fuente para el título */
     margin-top: 10px;
     margin-bottom: 10px;
-    /* Espaciado debajo del título */
 }
 
 .calidadp {
@@ -35,12 +27,9 @@
     color: rgba(62, 62, 63, 0.9921568627);
     width: 43%;
     font-size: $tamaño-parrafo;
-    /* Tamaño de fuente para el párrafo */
     line-height: 1.5;
-    /* Espaciado entre líneas */
 }
-
-/* Media Queries para Responsividad */
+// Media Queries para Responsividad 
 @media (max-width: 800px) {
     .calidad {
         padding: 20px;
@@ -49,7 +38,6 @@
 
     .calidadh {
         font-size: 2em;
-        /* Reduce aún más el tamaño de la fuente en pantallas muy pequeñas */
     }
 
     .calidadp {
@@ -57,7 +45,6 @@
         display: flex;
         flex-direction: row;
         font-size: 0.9em;
-        /* Reduce aún más el tamaño de la fuente en pantallas muy pequeñas */
     }
 }
 
@@ -69,13 +56,11 @@
     .calidadh {
         width: 90%;
         font-size: 1em;
-        /* Reduce aún más el tamaño de la fuente en pantallas muy pequeñas */
     }
 
     .calidadp {
         width: 90%;
         font-size: 0.5em;
-        /* Reduce aún más el tamaño de la fuente en pantallas muy pequeñas */
     }
 }
 
@@ -89,119 +74,85 @@
     display: flex;
     margin-top: 100px;
     flex-wrap: wrap;
-    /* Permite que los elementos se ajusten en varias filas */
     justify-content: center;
-    /* Centra los elementos horizontalmente */
     gap: 20px;
-    /* Espaciado entre los elementos */
     padding: 20px;
 
-    /* Espaciado interno de la sección */
     .antiparasitaria {
         text-align: center;
-        /* Centra el contenido del texto */
         flex: 1 1 100%;
-        /* Ocupa toda la fila en pantallas pequeñas */
         margin-bottom: 20px;
-        /* Espaciado inferior */
     }
 }
 
 .antiparasitaria img {
     max-width: 100px;
-    /* Tamaño máximo de la imagen */
     height: auto;
-    /* Mantiene la proporción de la imagen */
 }
 
 .antiparasitaria p {
     color: rgba(62, 62, 63, 0.9921568627);
     font-size: $tamaño-titulo;
-    /* Tamaño de fuente del texto */
     margin-top: 10px;
-    /* Espaciado superior */
 }
 
 .parasito {
     flex: 1 1 calc(33.333% - 20px);
-    /* Ocupa un tercio del ancho con espacio entre elementos */
     background-color: #ffffff;
-    /* Fondo blanco para cada tarjeta */
     border-radius: 8px;
-    /* Bordes redondeados */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Sombra opcional */
     padding: 15px;
-    /* Espaciado interno */
     text-align: center;
-    /* Centra el contenido */
 
     .parasito-h2 {
         color: rgba(62, 62, 63, 0.9921568627);
         font-size: $tamaño-titulo;
-        /* Tamaño de fuente del título */
         margin-bottom: 10px;
-        /* Espaciado inferior */
     }
 
     .parasito-p {
         color: rgba(62, 62, 63, 0.9921568627);
         font-size: $tamaño-parrafo;
-        /* Tamaño de fuente del párrafo */
         line-height: 1.5;
-        /* Espaciado entre líneas */
         margin-bottom: 10px;
-        /* Espaciado inferior */
     }
 
     .parasito img {
         max-width: 60%;
-        /* Imagen ocupa el ancho del contenedor */
         height: auto;
-        /* Mantiene la proporción de la imagen */
         margin-top: 10px;
-        /* Espaciado superior */
         border-radius: 8px;
-        /* Bordes redondeados opcionales */
     }
 }
-
-/* Media Queries para Responsividad */
+// Media Queries para Responsividad 
 @media (max-width: 768px) {
     .parasito {
         flex: 1 1 calc(50% - 20px);
-        /* Ocupa la mitad del ancho en pantallas medianas */
     }
 
     .antiparasitaria p {
         font-size: 1.2em;
-        /* Reduce el tamaño de la fuente en pantallas medianas */
     }
 }
-
+// Media Queries para Responsividad 
 @media (max-width: 480px) {
     .parasito {
         flex: 1 1 100%;
-        /* Ocupa todo el ancho en pantallas pequeñas */
     }
 
     .antiparasitaria img {
         max-width: 80px;
-        /* Reduce el tamaño de la imagen en pantallas pequeñas */
     }
 
     .antiparasitaria p {
         font-size: 1em;
-        /* Reduce el tamaño de la fuente en pantallas pequeñas */
     }
 
     .parasito-h2 {
         font-size: 1.2em;
-        /* Reduce el tamaño del título en pantallas pequeñas */
     }
 
     .parasito-p {
         font-size: 0.9em;
-        /* Reduce el tamaño del párrafo en pantallas pequeñas */
     }
 }

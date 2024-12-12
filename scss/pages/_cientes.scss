@@ -1,109 +1,105 @@
 .sabemos-por {  
-  padding: 20px; /* Espaciado alrededor de la sección */  
-  background-color: #f9f9f9; /* Color de fondo opcional */  
+  padding: 20px; 
+  background-color: #f9f9f9;
   background-image: url(../img/labradormarron.png);
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: 100%;
-
-  margin: 0 auto; /* Centra el contenedor horizontalmente */  
-  border-radius: 8px; /* Bordes redondeados opcionales */  
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra opcional */  
+  margin: 0 auto; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
   .calidad-h {  
     width: 55%;
     color: #3482db;
-    font-size: 2em; /* Tamaño de fuente para el título */ 
+    font-size: 2em;
     margin-left: 25px;
     margin-top: 10px; 
-    margin-bottom: 30px; /* Espaciado debajo del título */  
+    margin-bottom: 30px;
   }  
   
   .calidad-p { 
     margin-left: 25px;
     color:rgba(62, 62, 63, 0.9921568627); ; 
     width: 65%;
-    font-size: 1em; /* Tamaño de fuente para el párrafo */  
-    line-height: 1.8; /* Espaciado entre líneas */  
+    font-size: 1em; 
+    line-height: 1.8; 
   }  
 }  
-
-/* Media Queries para Responsividad */  
+// Media Queries para Responsividad 
 @media (max-width: 768px) {  
   .calidadh {  
-      font-size: 1.5em; /* Reduce el tamaño de la fuente en pantallas pequeñas */  
+      font-size: 1.5em;
   }  
 
   .calidadp {  
-      font-size: 1em; /* Reduce el tamaño de la fuente en pantallas pequeñas */  
+      font-size: 1em;
   }  
 }  
-
+// Media Queries para Responsividad 
 @media (max-width: 480px) {  
   .calidadh {  
-      font-size: 1.3em; /* Reduce aún más el tamaño de la fuente en pantallas muy pequeñas */  
+      font-size: 1.3em; 
   }  
 
   .calidadp {  
-      font-size: 0.9em; /* Reduce aún más el tamaño de la fuente en pantallas muy pequeñas */  
+      font-size: 0.9em;
   }  
 }  
 
 .caja {  
-  display: flex; /* Utiliza flexbox para el diseño */  
-  flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas */  
-  justify-content: center; /* Centra los elementos horizontalmente */  
-  gap: 20px; /* Espaciado entre los elementos */  
-  padding: 20px; /* Espaciado interno de la sección */  
-
+  display: flex; 
+  flex-wrap: wrap;  
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
   margin-top: 100px;
 
   .caja-div {  
-    background-color: rgba(62, 62, 63, 0.9921568627); /* Fondo blanco para cada tarjeta */  
-    border-radius: 8px; /* Bordes redondeados */  
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra opcional */  
-    padding: 15px; /* Espaciado interno */  
-    text-align: center; /* Centra el contenido */  
-    flex: 1 1 calc(30% - 20px); /* Ocupa un 30% del ancho menos el espacio entre elementos */  
+    background-color: rgba(62, 62, 63, 0.9921568627); 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px; 
+    text-align: center;  
+    flex: 1 1 calc(30% - 20px); 
   }
 
   .caja-div img {  
-    max-width: 100%; /* La imagen ocupa el ancho del contenedor */  
-    height: auto; /* Mantiene la proporción de la imagen */  
-    border-radius: 8px; /* Bordes redondeados opcionales */  
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 8px;
   }  
   
   .caja-h2 {  
     color: #fff;
-    font-size: 1.5em; /* Tamaño de fuente del título */  
-    margin: 10px 0; /* Espaciado superior e inferior */  
+    font-size: 1.5em; 
+    margin: 10px 0;
   }  
   
   .caja-parra {  
     color: #fff;
-    font-size: 1em; /* Tamaño de fuente del párrafo */  
-    line-height: 1.5; /* Espaciado entre líneas */  
+    font-size: 1em; 
+    line-height: 1.5;
   }  
 }  
-
-/* Media Queries para Responsividad */  
+// Media Queries para Responsividad 
 @media (max-width: 768px) {  
   .caja-div {  
-      flex: 1 1 calc(45% - 20px); /* Ocupa el 45% del ancho en pantallas medianas */  
+      flex: 1 1 calc(45% - 20px); 
   }  
 }  
-
+// Media Queries para Responsividad 
 @media (max-width: 480px) {  
   .caja-div {  
-      flex: 1 1 100%; /* Ocupa todo el ancho en pantallas pequeñas */  
+      flex: 1 1 100%; 
   }  
 
   .caja-h2 {  
-      font-size: 1.2em; /* Reduce el tamaño del título en pantallas pequeñas */  
+      font-size: 1.2em; 
   }  
 
   .caja-parra {  
-      font-size: 0.9em; /* Reduce el tamaño del párrafo en pantallas pequeñas */  
+      font-size: 0.9em; 
   }  
 }  
 
@@ -112,46 +108,44 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 20px; /* Espaciado interno de la sección */  
-  background-color: #f9f9f9; /* Color de fondo opcional */  
-    
+  padding: 20px;
+  background-color: #f9f9f9; 
   margin-top: 100px;
-  border-radius: 8px; /* Bordes redondeados opcionales */  
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra opcional */  
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
   .sabemos-h {  
     color: #3482db;
-    font-size: 2em; /* Tamaño de fuente del encabezado */  
-    margin-bottom: 15px; /* Espaciado inferior */  
-    text-align: center; /* Centra el texto */  
+    font-size: 2em;  
+    margin-bottom: 15px;  
+    text-align: center;
   }  
   
   .sabemos-p {  
     color:rgba(62, 62, 63, 0.9921568627) ;
     width: 80%;
-    font-size: 1.2em; /* Tamaño de fuente del párrafo */  
-    line-height: 1.5; /* Espaciado entre líneas */  
+    font-size: 1.2em;
+    line-height: 1.5; 
   }  
 }  
-
-/* Media Queries para Responsividad */  
+// Media Queries para Responsividad 
 @media (max-width: 768px) {  
   .sabemos-h {  
-      font-size: 1.5em; /* Reduce el tamaño de la fuente en pantallas medianas */  
+      font-size: 1.5em;  
   }  
 
   .sabemos-p {  
-      font-size: 1em; /* Reduce el tamaño de la fuente en pantallas medianas */  
+      font-size: 1em;
   }  
 }  
-
+// Media Queries para Responsividad 
 @media (max-width: 480px) {  
   .sabemos-h {  
-      font-size: 1.3em; /* Reduce aún más el tamaño de la fuente en pantallas pequeñas */  
+      font-size: 1.3em;
   }  
 
   .sabemos-p {  
-      font-size: 0.9em; /* Reduce aún más el tamaño de la fuente en pantallas pequeñas */  
+      font-size: 0.9em; 
   }  
 }  
 
